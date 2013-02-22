@@ -1,0 +1,23 @@
+Oruga
+=====
+
+problema de la oruga de una clase de programación
+14. Una oruga puede comer hasta la 20 parte de su peso en un dia, (su peso a las 6:00), 
+la oruga come desde las 6:00 hasta las 18:00; y si puede cumplir esta dieta al dia siguiente 
+su peso ha aumentado en un 10% (a las 6:00), la oruga nace de 15g. Si dicho animalito se alimenta 
+de una planta cuyas hojas crecen durante la noche (18:00-6:00) hasta un 25% con respecto a la 
+cantidad de hojas a las 18:00. Si la planta tiene 1Kg de hojas a las 6:00 el dia que la 
+oruga empieza a alimentarse de ella, determine el peso de la oruga y de las hojas al cabo de n dias a las 6:00.
+
+
+function oruga(n)
+pf=15;mp=1000;
+for i=1:n
+    po=pf;
+    pf=1.10*pf;
+    mp=(mp-(pf-po));
+    mp=1.25*mp;
+end
+pf
+mp
+end
